@@ -19,7 +19,7 @@ with open('test.txt') as csv_file:
             print(f'Column names are {", ".join(row)}')
             line_count += 1
         else:
-            print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
+            print(f'\t{row[0]} works in the {row[1]} department, and file id is {row[2]}.')
             x=row[0]
             y=row[2]
             send_simple_message(x,y)
